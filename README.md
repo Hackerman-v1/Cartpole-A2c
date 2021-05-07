@@ -9,19 +9,21 @@
 ![1_vslpUR9-ii_T-flNmmvgXg](https://user-images.githubusercontent.com/77123547/117442632-52ac0780-af37-11eb-83b9-5f28554e2f8f.png)
 
 ## Before Training 
- Initially the pendulum tends to fall because created actor critic network does not know what action to be take and performs random actions. This is because the neural network certainly has been intiallised and hyperparameters are intiallised to the random values. Hence the performance of neural network looks similar to this.
+ #### Initially the pendulum tends to fall because created actor critic network does not know what action to be take and performs random actions. This is because the neural network certainly has been intiallised and hyperparameters are intiallised to the random values. Hence the performance of neural network looks similar to this.
 ![Before-training](https://user-images.githubusercontent.com/77123547/117444505-d961e400-af39-11eb-82ec-22eb4dba6624.gif)
 
 ## Training Using Actor critic agent.
-Actor-Critic agent is model free method, where critic estimates the value function and actor updates the policy distribution. These policies update the advantage function, which finds the difference as an error in network. These networks are backpropagated using the advantage function.
+#### Actor-Critic agent is model free method, where critic estimates the value function and actor updates the policy distribution. These policies update the advantage function, which finds the difference as an error in network. These networks are backpropagated using the advantage function.
 
 ## After Training
-Once the Network is trained, it will certainly take actions which is neccesary to maintain the pendulum across the pivot point.
+#### Once the Network is trained, it will certainly take actions which is neccesary to maintain the pendulum across the pivot point.
 
 ![After-training](https://user-images.githubusercontent.com/77123547/117444526-e2eb4c00-af39-11eb-811e-6245f690bd43.gif)
 
 ## Graphs
-The Rewards vs Episode graph signifies that after certain episode it gets coverged which denotes that for any state, Neural network tensds to give appropriate action.
+#### The Rewards vs Episode graph signifies that after certain episode it gets coverged which denotes that for any state, Neural network tensds to give appropriate action.
+
+
 ![a2cstepsvsepi](https://user-images.githubusercontent.com/77123547/117444571-f1d1fe80-af39-11eb-8200-043bb1f356fb.png)
 ![a2crewardvsepi](https://user-images.githubusercontent.com/77123547/117444572-f26a9500-af39-11eb-94e1-ea54e6f4de46.png)
 ![a2closs](https://user-images.githubusercontent.com/77123547/117444573-f3032b80-af39-11eb-988a-b2495a00a60b.png)
