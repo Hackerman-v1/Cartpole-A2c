@@ -1,1 +1,1 @@
-# Cartpole-A2c
+# Performing Cartpole environment using Actor-Critic agent
