@@ -8,7 +8,12 @@
 ### The observation space has 4 input values [dispalcement, velocity, theta, angular velocity] and 2 action values [left, right] either 0 or 1 in order to move the pendulum position to balance the CG of the pendulum. [Reference..](https://towardsdatascience.com/how-to-beat-the-cartpole-game-in-5-lines-5ab4e738c93f#:~:text=CartPole%20is%20a%20game%20in,the%20power%20of%20machine%20learning.&text=Although%20it%20is%20only%205,completely%20beats%20the%20CartPole%20game)
 ![1_vslpUR9-ii_T-flNmmvgXg](https://user-images.githubusercontent.com/77123547/117442632-52ac0780-af37-11eb-83b9-5f28554e2f8f.png)
 
+## Before Training 
+ Initially the pendulum tends to ocillate because created actor critic network does not what action to be taken and performs actions randomly. This is because the neural network certainly has been intiallised and hyperparameters are intiallised to the random values. Hence the performance of neural network looks similar to this.
 ![Before-training](https://user-images.githubusercontent.com/77123547/117444505-d961e400-af39-11eb-82ec-22eb4dba6624.gif)
+
+## Training Usind Actor critic agent.
+
 
 ![After-training](https://user-images.githubusercontent.com/77123547/117444526-e2eb4c00-af39-11eb-811e-6245f690bd43.gif)
 
